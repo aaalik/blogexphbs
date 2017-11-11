@@ -1,0 +1,51 @@
+ </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="/jquery/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="/addon/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Metis Menu Plugin JavaScript -->
+    <script src="/addon/metisMenu/metisMenu.min.js"></script>
+
+    <!-- Morris Charts JavaScript -->
+
+
+    <!-- Custom Theme JavaScript -->
+    <script src="/sbadmin/js/sb-admin-2.js"></script>
+
+    <!-- Include the Quill library -->
+    <script src="/quill/quill.js"></script>
+
+    <!-- Initialize Quill editor -->
+    <script>
+      var editor = new Quill('#editor', {
+        modules: { toolbar: true },
+        theme: 'snow',
+        placeholder: 'Edit text here...'
+      });
+
+      $("#clickEdit").click(function(){
+        console.log("iya");
+        var content = editor.getText();
+        var title = $("#title").val();
+        var request = $.ajax({
+            url: "http://localhost:3000/users/edit",
+            method: "POST",
+            data: {
+                title: title,
+                content: content
+            },
+            dataType: "html",
+            success: function(data){
+                alert('yg di html');
+            }
+        });
+      });
+    </script>
+
+</body>
+
+</html>

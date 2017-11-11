@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>{{title}}</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="/addon/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- MetisMenu CSS -->
+    <link href="/addon/metisMenu/metisMenu.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="/sbadmin/css/sb-admin-2.css" rel="stylesheet">
+
+    <!-- Morris Charts CSS -->
+    <link href="/addon/morrisjs/morris.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="/addon/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- Include Quill stylesheet -->
+    <link href="/quill/quill.snow.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html"><i class="fa fa-home fa-fw"></i> First Blog</a>
+            </div>
+            <!-- /.navbar-header -->
+            <ul class="nav navbar-nav navbar-top-links">
+                <li>
+                    <a href="/">
+                        <i class="fa fa-home fa-fw"></i> First Blog</i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-comment fa-fw"></i> 0</i>
+                    </a>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-plus fa-fw"></i> New
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/users/edit">Post</a>
+                        </li>
+                        <li><a href="#">Media</a>
+                        </li>
+                        <li><a href="#">Page</a>
+                        </li>
+                        <li><a href="#">User</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+            <ul class="nav navbar-top-links navbar-right">
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-user fa-fw"></i> <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">My Profile</a>
+                        </li>
+                        <li><a href="/logout">Logout</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+            <div class="navbar-default sidebar" role="navigation">
+                <div class="sidebar-nav navbar-collapse">
+                    <ul class="nav" id="side-menu">
+                        <li>
+                            <a href="#"><i class="fa fa-dashboard fa-fw"></i> Dashboard<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="/users/">Home</a>
+                                </li>
+                                <li>
+                                    <a href="#">Updates</a>
+                                </li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-send fa-fw"></i> Posts<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="/users/posts">All Posts</a>
+                                </li>
+                                <li>
+                                    <a href="/users/edit">Add New</a>
+                                </li>
+                                <li>
+                                    <a href="#">Categories</a>
+                                </li>
+                                <li>
+                                    <a href="#">Tags</a>
+                                </li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-photo fa-fw"></i> Media<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="#">Library</a>
+                                </li>
+                                <li>
+                                    <a href="#">Add New</a>
+                                </li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-file fa-fw"></i> Pages<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="#">All Pages</a>
+                                </li>
+                                <li>
+                                    <a href="#">Add New</a>
+                                </li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                        <li>
+                            <a href="index.html"><i class="fa fa-comment fa-fw"></i> Comments</a>
+                        </li>
+                        <li>
+                            <div class="divider"></div>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-paint-brush fa-fw"></i> Appearance<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="#">Themes</a>
+                                </li>
+                                <li>
+                                    <a href="#">Customize</a>
+                                </li>
+                                <li>
+                                    <a href="#">Widgets</a>
+                                </li>
+                                <li>
+                                    <a href="#">Menus</a>
+                                </li>
+                                <li>
+                                    <a href="#">Header</a>
+                                </li>
+                                <li>
+                                    <a href="#">Editor</a>
+                                </li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-plug fa-fw"></i> Plugins<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="#">Install Plugins</a>
+                                </li>
+                                <li>
+                                    <a href="#">Add New</a>
+                                </li>
+                                <li>
+                                    <a href="#">Editor</a>
+                                </li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-user fa-fw"></i> Users<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="#">All Users</a>
+                                </li>
+                                <li>
+                                    <a href="#">Add New</a>
+                                </li>
+                                <li>
+                                    <a href="#">Your Profile</a>
+                                </li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-wrench fa-fw"></i> Tools<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="#">Available Tools</a>
+                                </li>
+                                <li>
+                                    <a href="#">Import</a>
+                                </li>
+                                <li>
+                                    <a href="#">Export</a>
+                                </li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-cogs fa-fw"></i> Settings<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="#">General</a>
+                                </li>
+                                <li>
+                                    <a href="#">Writing</a>
+                                </li>
+                                <li>
+                                    <a href="#">Reading</a>
+                                </li>
+                                <li>
+                                    <a href="#">Discussion</a>
+                                </li>
+                                <li>
+                                    <a href="#">Media</a>
+                                </li>
+                                <li>
+                                    <a href="#">Permalinks</a>
+                                </li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                        <li>
+                            <a href="index.html"><i class="fa fa-chevron-left fa-fw"></i> Collapse Menu</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.sidebar-collapse -->
+            </div>
+            <!-- /.navbar-static-side -->
+        </nav>
